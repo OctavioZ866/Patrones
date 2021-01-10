@@ -1,0 +1,72 @@
+{% extends 'app/base.html'%}
+{% load static %}
+{% block contenido %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Reconocimento de Patrones Sintactico Estructural</h2>
+        <ol>
+          <li><a href="{% url 'home' %}">Inicio</a></li>
+          <li><a href="{% url 'resultados' %}">Resultados</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs Section -->
+
+  <!-- ======= Patrones Section ======= -->
+  <section id="datos" class="datos">
+    <div class="container">
+      <div class="section-title">
+        <h2>Patrones</h2>
+      </div>
+    </div>
+    <div class="container" style="text-align:center;">
+      <table class="egt" border=2 width=100%>
+        <tr>
+          <td scope="row" colspan=4 style="background-color:deeppink">
+            <font size=10 color="white">CALCULA CÁNCER</font>
+          </td>
+        </tr>
+        <tr>
+
+          <th style="background-color:lightpink" color="white">PARTES</th>
+
+          <th style="background-color:lightpink" color="white">TEMPERATURA</th>
+
+          <th style="background-color:lightpink" color="white">COLOR</th>
+
+          <th style="background-color:lightpink" color="white">IFLAMACIÓN</th>
+
+        </tr>
+        {% for c in misTejidos %}
+        <tr>
+
+          <td>{{ c.partes }}</td>
+
+          <td>{{ c.temperatura }}</td>
+
+          <td>{{ c.color }}</td>
+
+          <td>{{ c.inflamacion }}</td>
+
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <section id="datos" class="datos">
+      <div class="container" style="text-align:center;">
+        <form action="{% url 'resultados' %}">
+
+          <button type="submit" class="btn btn-success">Hacer Calculo</button>
+
+        </form>
+      </div>
+    </section>
+  </section><!-- End Patrones Section -->
+</main><!-- End #main -->
+{% endblock %}

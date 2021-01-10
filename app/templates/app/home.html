@@ -1,0 +1,277 @@
+{% extends 'app/base.html'%}
+{% load static %}
+{% block contenido %}
+
+<section class="slider" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="header-backup"></div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{% static 'app/img/slide-one.jpg' %}" alt="">
+                        <div class="carousel-caption">
+                            <h1>Conoce nuestro gran grupo de Doctores</h1>
+                            <p>Ellos te ayudarán en tu lucha contra el Cáncer </p>
+                            <button>leer mas</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'app/img/slide-two.jpg' %}" alt="">
+                        <div class="carousel-caption">
+                               <h1>Tratamientos</h1>
+                               <p>conoce los tratamientos y opciones para tí</p>
+                               <button>leer mas</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'app/img/slide-three.jpg' %}" alt="">
+                        <div class="carousel-caption">
+                               <h1>Lideres en Investigación</h1>
+                               <button>learn more</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'app/img/slide-four.jpg' %}" alt="">
+                        <div class="carousel-caption">
+                               <h1>Capacitaciones</h1>
+                               <p>Capacitaciones</p>
+                               <button>leer mas</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anteior</span>
+                </a>
+                <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Despúes</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section><!-- end of slider section -->
+
+<!-- about section -->
+<section class="about text-center" id="about">
+    <div class="container">
+        <div class="row">
+            <h2>Acerca de Nostros</h2>
+            <h4>Somos un grupo de doctores especialistas encargados a dar el mejor tratamiento a nuestros pacientes</h4>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail clearfix">
+                    <div class="about-img">
+                        <img class="img-responsive" src="{% static 'app/img/item1.jpg' %}" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>C</h1>
+                        </div>
+                        <h3>Especialistas en Cáncer</h3>
+                        <p>Algunos especialistas que tratan el cáncer son: Oncólogo: doctor que se especializa en tratar el cáncer. Hematólogo: doctor que se enfoca en enfermedades de la sangre y tejidos relacionados, incluyendo la médula ósea, el bazo y los ganglios linfáticos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail">
+                    <div class="about-img">
+                        <img class="img-responsive" src="{% static 'app/img/item2.jpg' %}" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>W</h1>
+                        </div>
+
+                        <h3>Especialista en Neurología</h3>
+                        <p>Nuestro propósito: que los pacientes encuentren diagnósticos certeros, tratamientos personalizados y resultados que deriven en calidad de vida, todo ello gracias a la colaboración del grupo de neurólogos más distinguido del sector privado en la capital del país. Nuestros neurólogos son líderes en su subespecialidad, posición alcanzada mediante el estudio comprometido en México y el extranjero, trabajo arduo y años de experiencia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail">
+                    <div class="about-img">
+                        <img class="img-responsive" src="{% static 'app/img/item3.jpg' %}" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>M</h1>
+                        </div>
+                        <h3>Especialistas en Ortopedía</h3>
+                        <p>Es una especialidad médica dedicada a corregir o evitar las deformidades o traumas del sistema musculoesquelético del cuerpo humano, por medio de cirugía (cirugía ortopédica), aparatos (llamados ortesis) o ejercicios corporales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- end of about section -->
+
+
+<!-- service section starts here -->
+<section class="service text-center" id="service">
+    <div class="container">
+        <div class="row">
+            <h2>Nuestros servicios</h2>
+            <h4>EN MEDICAPANDA tE OFRECEMOS LA MEJOR ATENCIÓN CON LOS MEJORES DOCTORES A NIVEL NACIONAL, TODOS ESPECIALISTAS EN DIVERSAS AREAS DE LA MEDICINA.</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <img class="heart img-responsive" src="{% static 'app/img/service1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <h3> Cáncer de Corazón</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <img class="brain img-responsive" src="{% static 'app/img/service2.png' %}" alt="">
+                        </div>
+                    </div>
+                    <h3> Cáncer de Cerebro</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <img class="knee img-responsive" src="{% static 'app/img/service3.png' %}" alt="">
+                        </div>
+                    </div>
+                    <h3>Cáncer de Rodillas</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <img class="bone img-responsive" src="{% static 'app/img/service4.png' %}" alt="">
+                        </div>
+                    </div>
+                    <h3> Cáncer en los Huesos</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- end of service section -->
+
+
+<!-- team section -->
+<section class="team" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <h2>Nuetro Equipo</h2>
+                <h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>
+            </div>
+            <div class="col-md-2 single-member col-sm-4">
+                <div class="person">
+                    <img class="img-responsive" src="{% static 'app/img/member1.jpg' %}" alt="member-1">
+                </div>
+                <div class="person-detail">
+                    <div class="arrow-bottom"></div>
+                    <h3>Dr. M. Weiner, M.D.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+            </div>
+            <div class="col-md-2 single-member col-sm-4">
+                <div class="person-detail">
+                    <div class="arrow-top"></div>
+                    <h3>Dr. Danielle, M.D.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+                <div class="person">
+                    <img class="img-responsive" src="{% static 'app/img/member2.jpg' %}" alt="member-2">
+                </div>
+            </div>
+            <div class="col-md-2 single-member col-sm-4">
+                <div class="person">
+                    <img class="img-responsive" src="{% static 'app/img/member3.jpg' %}" alt="member-3">
+                </div>
+                <div class="person-detail">
+                    <div class="arrow-bottom"></div>
+                    <h3>Dr. Caitlin, M.D.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+            </div>
+            <div class="col-md-2 single-member col-sm-4">
+                <div class="person-detail">
+                    <div class="arrow-top"></div>
+                    <h3>Dr. Joseph, M.D.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+                <div class="person">
+                    <img class="img-responsive" src="{% static 'app/img/member4.jpg' %}" alt="member-4">
+                </div>
+            </div>
+            <div class="col-md-2 single-member col-sm-4">
+                <div class="person">
+                    <img class="img-responsive" src="{% static 'app/img/member5.jpg' %}" alt="member-5">
+                </div>
+                <div class="person-detail">
+                    <div class="arrow-bottom"></div>
+                    <h3>Dr. Michael, M.D.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+            </div>
+            <div class="col-md-2 single-member col-sm-4">
+                <div class="person-detail">
+                    <div class="arrow-top"></div>
+                    <h3>Dr. Hasina, M.D.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+                <div class="person">
+                    <img class="img-responsive" src="{% static 'app/img/member6.jpg' %}" alt="member-5">
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- end of team section -->
+
+<!-- map section -->
+<div class="api-map" id="contact">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 map" id="map"></div>
+        </div>
+    </div>
+</div><!-- end of map section -->
+
+<!-- contact section starts here -->
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-caption clearfix">
+                <div class="contact-heading text-center">
+                    <h2>contacto</h2>
+                </div>
+                <div class="col-md-5 contact-info text-left">
+                    <h3>Información del contacto</h3>
+                    <div class="info-detail">
+                        <ul><li><i class="fa fa-calendar"></i><span>Lunes - Viernes:</span> 9:30 AM a 6:30 PM</li></ul>
+                        <ul><li><i class="fa fa-map-marker"></i><span>Dirección:</span> Alhóndiga de granaditas #21, Col. Loma Bonita CP. 56563</li></ul>
+                        <ul><li><i class="fa fa-phone"></i><span>Telefono:</span> (052) 55-76-29-82-67</li></ul>
+                        <ul><li><i class="fa fa-fax"></i><span>Fax:</span> (123) 984-1234</li></ul>
+                        <ul><li><i class="fa fa-envelope"></i><span>Email:</span> octavio.zuniga94@gmail.com</li></ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1 contact-form">
+                    <h3>Deja un mensaje</h3>
+
+                    <form class="form">
+                        <input class="name" type="text" placeholder="Name">
+                        <input class="email" type="email" placeholder="Email">
+                        <input class="phone" type="text" placeholder="Phone No:">
+                        <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input class="submit-btn" type="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- end of contact section -->
+{% endblock %}

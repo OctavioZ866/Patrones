@@ -1,0 +1,105 @@
+{% extends 'app/base.html'%}
+{% load static %}
+{% block contenido %}
+<main id="main">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Reconocimento de Patrones Sintactico Estructural</h2>
+                <ol>
+                    <li><a href="{% url 'datos' %}">Patrones</a></li>
+                    <li><a href="{% url 'home' %}">Inicio</a></li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs Section -->
+    <!-- ======= Resultados Section ======= -->
+    <section id="datos" class="datos">
+        <div class="container">
+            <div class="section-title">
+                <h2>RESULTADOS</h2>
+            </div>
+            <div class="container">
+            </div>
+            <div class="container" style="text-align:center;">
+                <table class="egt" border=2 width=100%>
+                    <tr>
+                        <td scope="row" colspan=5 style="background-color:deeppink">
+                            <font size=10 color="white">RESULTADOS</font>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <th style="background-color:lightpink" color="white">MEDIANA TEMPERATURA</th>
+
+                        <th style="background-color:lightpink" color="white">MEDIANA COLOR</th>
+
+                        <th style="background-color:lightpink" color="white">MEDIANA IFLAMACIÓN</th>
+
+                        <th style="background-color:lightpink" color="white">MEDIANA POR REGISTRO</th>
+
+                        <th style="background-color:lightpink" color="white">MAX</th>
+
+                    </tr>
+                    <tr>
+
+                        <td>{{ mediaT }}</td>
+
+                        <td>{{ mediaC }}</td>
+
+                        <td>{{ mediaI }}</td>
+
+                        <td>{{ m }}</td>
+
+                        <td>{{ max }}</td>
+
+                    </tr>
+                </table>
+
+            </div>
+    </section><!-- End Resultados Section -->
+    <section id="patronesr" class="patronesr">
+        <div class="container" style="text-align:center;">
+            <table class="egt" border=2 width=100%>
+                <tr>
+                    <td scope="row" colspan=1 style="background-color:deeppink">
+                        <font size=10 color="white">TABLA RELACION ARISTA</font>
+                    </td>
+                </tr>
+                <tr>
+
+                    <th style="background-color:lightpink" color="white">Lista</th>
+                    {% for diccionario in lista2 %}
+                </tr>
+                <tr>
+                    <td>{{ diccionario }}</td>
+                    {% endfor %}
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="container" style="text-align:center;">
+            <table class="egt" border=2 width=100%>
+                <tr>
+                    <td scope="row" colspan=1 style="background-color:deeppink">
+                        <font size=10 color="white">DISTANCIAS</font>
+                    </td>
+                </tr>
+                <tr>
+
+                    <th style="background-color:lightpink" color="white">Lista</th>
+                    {% for num in lista %}
+                </tr>
+                <tr>
+                    <td>{{ num }}</td>
+                    {% endfor %}
+                </tr>
+            </table>
+        </div>
+    </section>
+</main><!-- End #main -->
+{% endblock %}
